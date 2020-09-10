@@ -5,7 +5,7 @@ if [ -z "$SCAN_TYPE" ]; then
   echo "OUTPUT_FILE_NAME is required to run MobSF action"
   exit 126
 else
-  if [ "$SCAN_TYPE" != "apk" ] && [ "$SCAN_TYPE" != "ipa" ] && [ "$SCAN_TYPE" != "appx" ]; then
+  if [ "$SCAN_TYPE" != "apk" ] && [ "$SCAN_TYPE" != "ipa" ] && [ "$SCAN_TYPE" != "zip" ]; then
     echo "SCAN_TYPE must be apk, ipa or appx. (SCAN_TYPE = $SCAN_TYPE)"
     exit 126
   fi
